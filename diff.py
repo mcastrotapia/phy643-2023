@@ -57,5 +57,5 @@ def animate(i):
     return initial, ev
 #Note that I specified that the plot updates each every 5 profiles since my timestep is very small, in this way the visualization goes quicker.        
 ani = FuncAnimation(fig, animate, frames=400, repeat=True) #This creates the animation. Note that repeat=True, then the animation will restart and won't stop until you close the window desplayed. You can set it to False to close the animation automatically when it ends.
-#ani.save("diff.gif", dpi=300, writer=PillowWriter(fps=10)) #You can un uncomment this part to save the animation as .gif file 
+#ani.save("diff.gif", dpi=150, writer=PillowWriter(fps=10)) #You can un uncomment this part to save the animation as .gif file 
 plt.show()
